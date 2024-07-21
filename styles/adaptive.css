@@ -1,0 +1,314 @@
+@media screen and (max-width: 1400px){
+    .container{
+        padding: 0 20px;
+    }
+    .section-main-img{
+        width: 45%;
+    }
+    .section-main-img img{
+        width: 100%;
+    }
+    .how-start-block{
+        width: 48%;
+    }
+    .pluses-container-block-big{
+        height: auto;
+    }
+    .different-taste-img{
+        width: 100%;
+    }
+    .plans-mini-block {
+        width: 34%;
+        height: auto;
+    }
+    .plans-mini-block button,.plans-container{
+        width: 100%;
+    }
+    .why-we-container-block{
+        width: 48%;
+    }
+    }
+@media screen and (max-width: 1150px){
+    .section-main-img{
+        display: none;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+        gap: 30px 50px;
+    }
+    .plans-container{
+        flex-wrap: wrap;
+    }
+    .plans-mini-block{
+        width: 100%;
+    }
+    .section-main-text{
+        max-width: 100%;
+    }
+    .pluses-container{
+        flex-direction: column;
+    }
+    .pluses-container-block-small,.pluses-container-block-big{
+        width: 100%;
+    }
+    .different-taste-img{
+        width: 1100px;
+        left: 50%;
+        margin-left: -550px;
+    }
+    .different-taste-text {
+        padding-top: 270px;
+    }
+}
+@media screen and (max-width: 960px){
+    .hamburger-menu{
+        display: block;
+    }
+    .videochat-content-hidden a{
+        width: 95%;
+    }
+    .videochat-content-hidden p{
+        padding: 0 10px;
+    }
+    .btn-lk-balance,.lk-content button{
+        width: 100%;
+    }
+    .different-taste-img{
+        width: 800px;
+        margin-left: -400px;
+    }
+    .footer-container{
+        justify-content: flex-start;
+    }
+    .footer-container-right{
+        align-items: flex-start;
+    }
+    .how-start-block{
+        width: 100%;
+    }
+    .plans {
+        margin-top: 300px;
+    }
+        .different-taste-text {
+        padding-top: 210px;
+    }
+    .guests-img{
+        width: 100%;
+        height: auto;
+    }
+    .guests-container-bottom{
+        flex-direction: column;
+    }
+    .menu-head,.head-lean{
+        display: none;
+    }
+    .possibility-container{
+        flex-direction: column;
+    }
+    .videochat-content-hidden p,.lk-top-text h3,.different-taste-text p,.different-taste-text span,.guests-container-bottom p,.title,.section-main-text h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .section-main-text p{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 30px 0;
+    }
+    .section-main {
+        padding: 50px 0;
+    }
+    .section-main-container-bottom{
+        margin-top: 40px;
+    }
+    section{
+        margin-top: 50px;
+    }
+    .section-main{
+        margin-top: 0;
+    }
+    .possibility-top{
+        margin-top: 50px;
+    }
+    .possibility-top-block{
+        width: 100%;
+    }
+    .possibility-img img,.possibility-img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px){
+    .lk-top-text,.why-we-container-block{
+        width: 100%;
+    }
+    .videochat-content-chat {
+        width: 100%;
+        height: 250px;
+    }
+    .videochat-content{
+        align-items: flex-end;
+    }
+    .videochat-content-chat-message{
+        height: 180px;
+    }
+    .videochat-content-chat-bottom{
+        height: 70px;
+    }
+    .videochat-content-chat-bottom input,.videochat-content-chat-message-block p{
+        width: 100%;
+    }
+    .videochat-content-chat-bottom,.videochat-content-chat-message{
+        padding: 15px 10px;
+    }
+        .why-we-ellipse{
+        display: none;
+    }
+    .why-we-title{
+        color: #292758!important;
+    }
+    .lk-top{
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+    .why-we-container{
+        padding-top: 30px;
+    }
+    .why-we-container-block{
+        padding: 30px 20px;
+        height: auto;
+    }
+    .why-we-container-block p{
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 475px){
+    .container{
+        padding: 0 10px;
+    }
+    .catalog-container-block{
+        width: 100%;
+    }
+    .videochat-content{
+        height: 550px;
+    }
+    .lk-top-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .pluses-container-block-small{
+        height: 200px;
+    }
+    .why-we-container{
+        gap: 20px;
+    }
+    .btn-catalog{
+        width: 100%;
+    }
+    .btn-register-how-start{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .why-we-container-block span{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .plans-mini-block{
+        padding: 20px;
+    }
+    .lk-top-text h5{
+        width: 100%;
+    }
+    .lk-top-text h5{
+        margin-top: 15px;
+    }
+    .catalog-container-block button,.videochat-content-hidden a,.btn-catalog,.btn-lk-balance,.lk-content button,.lk-top-text h5,.lk-content input,.btn-register-how-start,.btn-register-footer,.how-start-block p,.plans-mini-block button,.plans-mini-block-content-part p,.plans-mini-block h4,.guests-container-bottom h5{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .lk-content input{
+        padding: 0 15px;
+        height: 50px;
+    }
+    .lk-top-text h5{
+        height: auto;
+        padding: 10px 15px;
+    }
+    .lk-content{
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .plans {
+        margin-top: 200px;
+    }
+    .how-start-block{
+        padding: 20px;
+        gap: 20px;
+    }
+    .different-taste-text {
+        padding-top: 160px;
+    }
+    .different-taste-img {
+        width: 600px;
+        margin-left: -300px;
+    }
+    .lk-top-text p{
+        padding-top: 15px;
+    }
+    .catalog-title{
+        padding: 30px 0;
+    }
+    .lk-top-text h3,.different-taste-text p,.different-taste-text span,.guests-container-bottom p,.possibility-text p,.title,.section-main-text h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .catalog-container-block-line span,.catalog-title,.catalog-container-block-line p,.videochat-content-hidden p,.lk-top-text p,.lk-top-text span,.how-start-block h3,.plans-mini-block h3,.plans-mini-block h5,.pluses-container-block-small p,.pluses-container-block-big h3{
+        font-size: 25px;
+        line-height: 30px;
+        gap: 20px;
+    }
+    .catalog-container-block{
+        padding: 20px;
+    }
+    .catalog-container-block-line{
+        padding: 20px 0;
+    }
+    .pluses-container-block-small,.pluses-container-block-big {
+        padding: 30px 20px;
+    }
+    .pluses-container-block-small, .pluses-container-block-big{
+        gap: 20px;
+    }
+    .pluses-container{
+        margin-top: 30px;
+    }
+    .pluses-container-block-big p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .possibility-top{
+        margin-top: 30px;
+    }
+    .possibility-top-block-part p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .section-main{
+        border-radius: 0px 0px 50px 50px;
+    }
+    .section-main-container-bottom p{
+        font-size: 16px;
+    }
+    .section-main-text-btns button{
+        width: 100% !important;
+    }
+    .section-main-text-btns{
+        flex-direction: column;
+    }
+    .section-main-container-bottom{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

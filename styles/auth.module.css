@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-radius: 6px;
+  border: 2px solid #292758;
+  padding: 35px 20px 20px 20px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #292758;
+}
+.label {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(213, 213, 213);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+.avatarInput {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.avatar {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.avatarFile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.input {
+  width: 400px !important;
+}
+.default {
+  font-size: 16px;
+  color: #292758;
+  white-space: nowrap;
+}
+.passportInput {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.passportLabel {
+  position: relative;
+  border-radius: 6px;
+  background-color: rgb(213, 213, 213);
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}
+.submitBtn {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  background-color: #292758;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #2f2d67;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .input {
+    width: 250px !important;
+  }
+}
