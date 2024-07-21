@@ -1,11 +1,10 @@
 import Image, { StaticImageData } from "next/image";
-import logo from "@/assets/Logo.png";
 import { ChangeEvent, useEffect, useState } from "react";
 import User from "@/schemas/User.schema";
 import getUser from "@/api/getUser";
 import styles from "@/styles/profile.module.css";
 import uploadImage from "@/api/uploadImage";
-import avatarIcon from "@/assets/Ellipse 3.png";
+import avatarIcon from "@/assets/avatar.svg";
 import updateAvatar from "@/api/updateAvatar";
 import updateNickname from "@/api/updateNickname";
 import { toastSuccess } from "@/utils/toast";
@@ -60,13 +59,12 @@ const Profile = () => {
   };
 
   const onUpdatePhone = async () => {
-    const user: User = await updatePhone(email);
-    console.log(user);
+    const user: User = await updatePhone(phone);
     if (user) toastSuccess("Успешно");
   };
 
   const onUpdatePassword = async () => {
-    const user: User = await updatePassword(email);
+    const user: User = await updatePassword(password);
     if (user) toastSuccess("Успешно");
   };
 
@@ -212,7 +210,7 @@ const Profile = () => {
             </div>
             <div className={styles.inputContainer}>
               <input
-                type="text"
+                type="password"
                 placeholder="Новый пароль"
                 value={password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -223,16 +221,18 @@ const Profile = () => {
                 Сохранить
               </div>
             </div>
-            <label className={styles.passport}>
-              <span className={styles.passportText}>
-                Загрузить новую фотографию паспорта
-              </span>
-              <input
-                type="file"
-                className={styles.passportInput}
-                onChange={onChangePassport}
-              />
-            </label>
+            {user.gender === "female" && (
+              <label className={styles.passport}>
+                <span className={styles.passportText}>
+                  Загрузить новую фотографию паспорта
+                </span>
+                <input
+                  type="file"
+                  className={styles.passportInput}
+                  onChange={onChangePassport}
+                />
+              </label>
+            )}
           </div>
         </div>
       </section>

@@ -14,7 +14,7 @@ const SignUp = () => {
   const [email, setEmail] = useState<string>("email@mail.ru");
   const [phone, setPhone] = useState<string>("+79998887766");
   const [password, setPassword] = useState<string>("password");
-  const [gender, setGender] = useState<string>("female");
+  const [gender, setGender] = useState<string>("male");
   const [date, setDate] = useState<string>("");
   const [dateBirth, setDateBirth] = useState<string>("10.10.2009");
   const [avatar, setAvatar] = useState<string>("");
@@ -60,7 +60,7 @@ const SignUp = () => {
   };
 
   const onSubmit = async () => {
-    const { refreshToken, accessToken, userId } = await signUp(
+    const response = await signUp(
       nickname,
       email,
       phone,
@@ -70,7 +70,9 @@ const SignUp = () => {
       avatar,
       passport
     );
-    if (!refreshToken || !accessToken || !userId) return;
+    if (!response) return;
+
+    const { refreshToken, accessToken, userId } = response;
 
     setCookie("access_token", accessToken);
     setCookie("refresh_token", refreshToken);
@@ -150,22 +152,24 @@ const SignUp = () => {
             <Radio value="female">Женский</Radio>
           </Stack>
         </RadioGroup>
-        <Stack
-          direction={screenWidth > 550 ? "row" : "column"}
-          gap={15}
-          alignSelf="flex-start"
-          alignItems={screenWidth > 550 ? "center" : "flex-start"}
-        >
-          <span className={styles.default}>Загрузите селфи с паспортом:</span>
-          <label className={styles.passportLabel}>
-            <span className={styles.default}>Загрузить:</span>
-            <input
-              type="file"
-              className={styles.passportInput}
-              onChange={onChangePassport}
-            />
-          </label>
-        </Stack>
+        {gender === "female" && (
+          <Stack
+            direction={screenWidth > 550 ? "row" : "column"}
+            gap={15}
+            alignSelf="flex-start"
+            alignItems={screenWidth > 550 ? "center" : "flex-start"}
+          >
+            <span className={styles.default}>Загрузите селфи с паспортом:</span>
+            <label className={styles.passportLabel}>
+              <span className={styles.default}>Загрузить:</span>
+              <input
+                type="file"
+                className={styles.passportInput}
+                onChange={onChangePassport}
+              />
+            </label>
+          </Stack>
+        )}
         <Stack
           direction={screenWidth > 550 ? "row" : "column"}
           gap={15}

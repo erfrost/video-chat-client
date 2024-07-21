@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import { Stack } from "@chakra-ui/react";
 import Image from "next/image";
+import avatar from "@/assets/avatarWhite.svg";
 import User from "@/schemas/User.schema";
 import logo from "@/assets/Logo.png";
 import Link from "next/link";
@@ -39,11 +40,11 @@ const Header = ({ user }: HeaderProps) => {
                 cursor="pointer"
               >
                 <Image
-                  src={user.avatar}
+                  src={user.avatar || avatar}
                   width={50}
                   height={50}
                   alt="avatar"
-                  className="avatar"
+                  className={styles.avatar}
                 />
               </Stack>
             </Link>
