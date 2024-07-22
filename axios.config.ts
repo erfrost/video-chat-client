@@ -3,8 +3,8 @@ import { getCookie } from "cookies-next";
 import updateToken from "./api/updateToken";
 
 const axiosInstance = axios.create({
-  // baseURL: "http://147.45.246.145:8000/api",
-  baseURL: "http://localhost:8000/api",
+  baseURL: "http://147.45.246.145:8000/api",
+  // baseURL: "http://localhost:8000/api",
   headers: {
     "Content-Type": "application/json",
   },
