@@ -83,6 +83,7 @@
   user-select: none;
 }
 .defaultHover {
+  cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
