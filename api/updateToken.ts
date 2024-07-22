@@ -7,7 +7,7 @@ const updateToken = async () => {
   try {
     const refresh_token: string | undefined = getCookie("refresh_token");
     if (!refresh_token) {
-      return toastWarning("Не все поля заполнены");
+      return toastWarning("refresh_token не найден. Войдите в аккаунт еще раз");
     }
 
     const payload = {

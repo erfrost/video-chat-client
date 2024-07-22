@@ -41,7 +41,7 @@ const Catalog = () => {
           <h1 className="catalog-title">Каталог девушек</h1>
           <div className="catalog-container">
             {girls.map((girl: Girl) => (
-              <GirlCard girl={girl} />
+              <GirlCard girl={girl} key={girl._id} />
             ))}
           </div>
         </div>

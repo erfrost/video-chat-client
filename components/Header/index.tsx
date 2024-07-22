@@ -5,12 +5,22 @@ import avatar from "@/assets/avatarWhite.svg";
 import User from "@/schemas/User.schema";
 import logo from "@/assets/Logo.png";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { getCookie } from "cookies-next";
 
 interface HeaderProps {
   user?: User;
 }
 
 const Header = ({ user }: HeaderProps) => {
+  const [isAuthorized, setIsAuthorized] = useState<boolean>(false);
+
+  useEffect(() => {
+    const accessToken: string | undefined = getCookie("access_token");
+    if (accessToken) setIsAuthorized(true);
+    else setIsAuthorized(false);
+  }, []);
+
   return (
     <header>
       <div className="header-container">

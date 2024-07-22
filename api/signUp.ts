@@ -10,15 +10,11 @@ const signUp = async (
   gender: string,
   dateBirth: string,
   avatar: string,
-  passport: string
+  passport: string[]
 ) => {
   try {
     if (!nickname || !email || !phone || !password || !gender || !dateBirth) {
       return toastWarning("Не все поля заполнены");
-    }
-
-    if (gender === "female" && !passport) {
-      return toastWarning("Паспорт не загружен");
     }
 
     const payload = {

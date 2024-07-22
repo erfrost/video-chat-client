@@ -39,6 +39,11 @@
   cursor: pointer;
   z-index: 10;
   position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
 .avatarInput {
   width: 100%;
@@ -71,6 +76,11 @@
   align-self: flex-start;
   border-radius: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 .passportText {
   color: white;

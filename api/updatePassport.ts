@@ -2,7 +2,7 @@ import axiosInstance from "@/axios.config";
 import { toastError, toastWarning } from "@/utils/toast";
 import { AxiosResponse } from "axios";
 
-const updatePassport = async (passport: string) => {
+const updatePassport = async (passport: string[]) => {
   try {
     if (!passport) return toastWarning("Паспорт не загружен");
 

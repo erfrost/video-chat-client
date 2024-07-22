@@ -53,7 +53,7 @@ const SignIn = () => {
             fontWeight: 600,
           }}
           href="signUp"
-          className={styles.default}
+          className={`${styles.default} ${styles.defaultHover}`}
         >
           Зарегистрироваться
         </Link>

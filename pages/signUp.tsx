@@ -18,7 +18,7 @@ const SignUp = () => {
   const [date, setDate] = useState<string>("");
   const [dateBirth, setDateBirth] = useState<string>("10.10.2009");
   const [avatar, setAvatar] = useState<string>("");
-  const [passport, setPassport] = useState<string>("");
+  const [passport, setPassport] = useState<string[]>([]);
   const [screenWidth, setScreenWidth] = useState<number>(1920);
   const router: NextRouter = useRouter();
 
@@ -56,7 +56,7 @@ const SignUp = () => {
     if (!files) return;
 
     const uploadedPassport: string = await uploadImage(files[0]);
-    setPassport(uploadedPassport);
+    setPassport((prevState) => [...prevState, uploadedPassport]);
   };
 
   const onSubmit = async () => {
@@ -190,7 +190,7 @@ const SignUp = () => {
         <Link
           style={{ alignSelf: "flex-start", fontSize: "14px", fontWeight: 600 }}
           href="signIn"
-          className={styles.default}
+          className={`${styles.default} ${styles.defaultHover}`}
         >
           Уже есть аккаунт
         </Link>

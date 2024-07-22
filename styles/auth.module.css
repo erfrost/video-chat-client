@@ -22,6 +22,8 @@
   font-size: 36px;
   font-weight: 600;
   color: #292758;
+  cursor: default;
+  user-select: none;
 }
 .label {
   width: 150px;
@@ -31,6 +33,11 @@
   cursor: pointer;
   z-index: 10;
   position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
 .avatarInput {
   width: 100%;
@@ -48,6 +55,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  user-select: none;
 }
 .avatarFile {
   width: 100%;
@@ -57,11 +65,29 @@
 }
 .input {
   width: 400px !important;
+  border: 2px solid #292758 !important;
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: #5351b7 !important;
+  }
+  &:focus-visible {
+    border: 2px solid #06049d !important;
+  }
 }
 .default {
   font-size: 16px;
   color: #292758;
   white-space: nowrap;
+  cursor: default;
+  user-select: none;
+}
+.defaultHover {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #4a4a56;
+  }
 }
 .passportInput {
   width: 100%;
@@ -70,13 +96,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
 }
 .passportLabel {
-  position: relative;
   border-radius: 6px;
   background-color: rgb(213, 213, 213);
   padding: 5px 15px;
+  position: relative;
   transition: all 0.3s ease;
 
   &:hover {
@@ -95,6 +120,7 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+  user-select: none;
 
   &:hover {
     background-color: #2f2d67;

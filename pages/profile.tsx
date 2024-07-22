@@ -73,7 +73,7 @@ const Profile = () => {
     if (!files) return;
 
     const uploadedPassport: string = await uploadImage(files[0]);
-    const user: User = await updatePassport(uploadedPassport);
+    const user: User = await updatePassport([uploadedPassport]);
     if (user) {
       toastSuccess(
         "Успешно. Как только администратор верифицирует Ваш паспорт, откроются все возможности платформы."

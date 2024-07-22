@@ -1,4 +1,3 @@
-import logo from "@/assets/logo.png";
 import image1 from "@/assets/29314779_2206_w037_n003_433b_p1_433 1.png";
 import image2 from "@/assets/Group 31.png";
 import image3 from "@/assets/Group 32.png";
